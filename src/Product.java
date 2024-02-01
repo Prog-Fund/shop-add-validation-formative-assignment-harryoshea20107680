@@ -24,6 +24,7 @@ public class Product {
        this.productName = productName;
        this.productCode = productCode;
        this.unitCost = unitCost;
+       this.inCurrentProductLine = inCurrentProductLine;
     }
 
     //-------
@@ -93,12 +94,7 @@ public class Product {
      * Builds a String representing a user-friendly representation of the object state
      * @return Details of the specific product
      */
-    public String toString()
-    //  The toString should return a String in the form e.g:
-    //  "Product description: Flatscreen TV  product code: 2000  unit cost: 1000 and currently in product line: Y"
-
-    {
-        return "TO DO WRITE TOSTRING";
+    public String toString(){
+        return "Product description: "+productName + "Product code: " +productCode +"cost: " + unitCost + "In current product line = " +inCurrentProductLine;
     }
-Test
 }
